@@ -66,6 +66,8 @@ main {
     transition: transform 0.3s;
     border-radius: 15px;
     position: relative;
+    display:flex;
+    flex-direction: column;
 }
 
 .player-card:hover {
@@ -79,7 +81,11 @@ main {
     height: 250px;
     object-fit: cover;
 }
-
+.player-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 .Page404 img{
     width: 100%;
     height: auto;
@@ -175,4 +181,38 @@ body {
 .headertop h1 {
     font-size: 24px;
     margin: 0;
+}
+
+.transfers a{
+    display: block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: lightskyblue;
+    color: #151820;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+.transfers a:hover {
+    transform: scale(1.05);
+}
+
+.foot a{
+    margin-top: 15px;
+    padding: 6px 12px;
+    background-color: rgb(31, 61, 117);
+    color: #a7bcfc;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+    margin-top: auto;
+}
+.foot a:hover {
+    transform: scale(1.05);
 }
